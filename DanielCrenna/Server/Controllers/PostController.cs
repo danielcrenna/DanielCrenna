@@ -21,7 +21,7 @@ namespace DanielCrenna.Server.Controllers
                 new BlogPost
                 {
                     Title = "Hello, World!",
-                    Body = "This is a text with some *emphasis*.",
+                    Body = "<pre><code class=\"csharp\">public static void Main(params string[] args) { }</code></pre>",
                     PublishedAt = new DateTimeOffset(2020, 10, 4, 16, 40, 0, DateTimeOffset.Now.Offset)
                 }
             };
