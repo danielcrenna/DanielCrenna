@@ -11,12 +11,9 @@
     @(new MarkupString(Markdown.ToHtml(post.Body, _pipeline)))
 }
 
-<SurveyPrompt Title="How is Blazor working for you?" />
-
 @code
 {
     private IEnumerable<BlogPost> _posts;
-    private MarkupString _post;
 
     private MarkdownPipeline _pipeline;
 
