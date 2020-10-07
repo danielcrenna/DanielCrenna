@@ -1,4 +1,4 @@
-# DanielCrenna
+# About Me
 
 I'm a techno-creative with interests in generative art, cryptography, and economics.
 
