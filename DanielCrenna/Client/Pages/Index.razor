@@ -1,7 +1,9 @@
 ﻿@page "/"
 @using DanielCrenna.Shared
 @using Markdig
+
 @inject HttpClient Http
+@inject IJSRuntime Javascript
 
 @foreach (var post in _posts ?? Enumerable.Empty<BlogPost>())
 {
@@ -9,7 +11,7 @@
     @(new MarkupString(Markdown.ToHtml(post.Body, _pipeline)))
 }
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+<SurveyPrompt Title="How is Blazor working for you?" />
 
 @code
 {
@@ -25,6 +27,11 @@
         _pipeline = new MarkdownPipelineBuilder()
             .UseAdvancedExtensions()
             .Build();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await Javascript.InvokeVoidAsync("onAfterRender");
     }
 
     protected override async Task OnInitializedAsync()
