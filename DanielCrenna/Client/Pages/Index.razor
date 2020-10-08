@@ -9,6 +9,7 @@
 {
     <h1>@post.Title</h1>
     @(new MarkupString(Markdown.ToHtml(post.Body, _pipeline)))
+    <br />
 }
 
 @code

@@ -16,6 +16,8 @@ namespace DanielCrenna.Server.Controllers
         [HttpGet("posts")]
         public IActionResult GetPosts()
         {
+            #region For clarity, writing material is not covered under an Open Source License
+
             var posts = new List<BlogPost>
             {
                 new BlogPost
@@ -23,8 +25,19 @@ namespace DanielCrenna.Server.Controllers
                     Title = "Hello, World!",
                     Body = "<pre><code class=\"csharp\">public static void Main(params string[] args) { }</code></pre>",
                     PublishedAt = new DateTimeOffset(2020, 10, 4, 16, 40, 0, DateTimeOffset.Now.Offset)
-                }
+                },
+                new BlogPost
+                {
+                    Title = "The inability to change is the heart of change.",
+                    Body = "Immutability, or the inability for something to change once created, is a principle worth following far beyond double-entry accounting. " +
+                           "An unused notebook seems full of promise, but the attachment to 'starting over' keeps the page empty. " +
+                           "Embracing scribbles or strike-outs is one way to accept immutability, and when we get over the fascination we have with _starting over_," +
+                           "then we can _start into_ the work we want to create.",
+                    PublishedAt = new DateTimeOffset(2020, 10, 8, 0, 33, 0, DateTimeOffset.Now.Offset)
+                },
             };
+
+            #endregion
 
             return Ok(posts);
         }
