@@ -5,13 +5,19 @@
 // file, you can obtain one at http://mozilla.org/MPL/2.0/.
 
 using System;
+using System.Text.Json.Serialization;
 
 namespace DanielCrenna.Shared
 {
     public class BlogPost
     {
+        [JsonPropertyName("title")]
         public string Title { get; set; }
+
+        [JsonPropertyName("body")]
         public string Body { get; set; }
+
+        [JsonPropertyName("publishedAt")]
         public DateTimeOffset PublishedAt { get; set; }
     }
 }

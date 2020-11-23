@@ -5,11 +5,16 @@
 // file, you can obtain one at http://mozilla.org/MPL/2.0/.
 
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace DanielCrenna.Shared
 {
     public class BlogPosts
     {
+        [JsonPropertyName("_comment")]
+        public string Comment { get; set; }
+
+        [JsonPropertyName("posts")]
         public IEnumerable<BlogPost> Posts { get; set; }
     }
 }
