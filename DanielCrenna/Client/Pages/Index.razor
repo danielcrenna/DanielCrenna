@@ -34,6 +34,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _posts = await Http.GetFromJsonAsync<IEnumerable<BlogPost>>("data/posts.json");
+        _posts = (await Http.GetFromJsonAsync<BlogPosts>("data/posts.json"))?.Posts;
     }
 }

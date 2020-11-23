@@ -1,8 +1,8 @@
 # About Me
 
-I'm a techno-creative with interests in generative art, cryptography, and economics.
+I'm a techno-creative with broad interest in generative art, cryptography, economics, and the nature of work.
 
-My commercial expertise lies in financial, e-commerce, and entertainment software.
+My commercial expertise lies in financial, e-commerce, media streaming, and game software.
 
 I'm currently interested in human-centric device programming (EEG, ERG, et al.) and the advent of personal software.
 
