@@ -3,19 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanielCrenna.Server", "DanielCrenna\Server\DanielCrenna.Server.csproj", "{4D73F142-4306-4F9F-A74B-8BE525BE4D13}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanielCrenna.Client", "DanielCrenna\Client\DanielCrenna.Client.csproj", "{B75DE1F6-CA75-4227-A0DD-0315BE5B850A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanielCrenna.Shared", "DanielCrenna\Shared\DanielCrenna.Shared.csproj", "{4E5414ED-ED3F-4160-8639-32E8E73936FE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EA73110-55E4-4A58-AA0F-F256BD4DD80A}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanielCrenna.Tests", "DanielCrenna\Tests\DanielCrenna.Tests.csproj", "{B8217CDD-E115-46C0-90CA-98D33D7E6804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterTesting", "src\BetterTesting\BetterTesting.csproj", "{08FD7CAE-DF52-4AE8-87D1-969994B0DD5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterTesting.Tests", "tests\BetterTesting.Tests\BetterTesting.Tests.csproj", "{150DF309-7E31-4F21-A078-7420E7E5D576}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,22 +19,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D73F142-4306-4F9F-A74B-8BE525BE4D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D73F142-4306-4F9F-A74B-8BE525BE4D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D73F142-4306-4F9F-A74B-8BE525BE4D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D73F142-4306-4F9F-A74B-8BE525BE4D13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B75DE1F6-CA75-4227-A0DD-0315BE5B850A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B75DE1F6-CA75-4227-A0DD-0315BE5B850A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B75DE1F6-CA75-4227-A0DD-0315BE5B850A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B75DE1F6-CA75-4227-A0DD-0315BE5B850A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E5414ED-ED3F-4160-8639-32E8E73936FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E5414ED-ED3F-4160-8639-32E8E73936FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E5414ED-ED3F-4160-8639-32E8E73936FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E5414ED-ED3F-4160-8639-32E8E73936FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8217CDD-E115-46C0-90CA-98D33D7E6804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8217CDD-E115-46C0-90CA-98D33D7E6804}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8217CDD-E115-46C0-90CA-98D33D7E6804}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8217CDD-E115-46C0-90CA-98D33D7E6804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FD7CAE-DF52-4AE8-87D1-969994B0DD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FD7CAE-DF52-4AE8-87D1-969994B0DD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FD7CAE-DF52-4AE8-87D1-969994B0DD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FD7CAE-DF52-4AE8-87D1-969994B0DD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150DF309-7E31-4F21-A078-7420E7E5D576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150DF309-7E31-4F21-A078-7420E7E5D576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150DF309-7E31-4F21-A078-7420E7E5D576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150DF309-7E31-4F21-A078-7420E7E5D576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

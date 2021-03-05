@@ -28,8 +28,4 @@
     <Folder Include="InputFiles\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\DanielCrenna.Shared.csproj" />
-  </ItemGroup>
-
 </Project>

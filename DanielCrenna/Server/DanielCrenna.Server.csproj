@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\DanielCrenna.Client.csproj" />
     <ProjectReference Include="..\Shared\DanielCrenna.Shared.csproj" />
   </ItemGroup>
 
