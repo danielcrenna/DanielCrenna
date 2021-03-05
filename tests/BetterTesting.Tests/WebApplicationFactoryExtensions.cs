@@ -31,6 +31,7 @@ namespace BetterTesting.Tests
             {
                 builder.ConfigureLogging(logging =>
                 {
+                    logging.ClearProviders(); // remove other logging providers, such as remote loggers or unnecessary event logs
                     logging.Services.AddSingleton<ILoggerProvider>(r => new XunitLoggerProvider(output));
                 });
             });
