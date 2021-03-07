@@ -6,7 +6,7 @@ My commercial expertise lies in financial, e-commerce, media streaming, and game
 
 I'm currently interested in human-centric device programming (EEG, ERG, et al.) and the advent of personal software.
 
- Site: https://danielcrenna.com
+Blog: https://daniel-crenna.medium.com
 
  # License
 
